@@ -13,76 +13,66 @@
 
 <body>
     <div class="container">
-        <header class="d-flex align-items-center justify-content-between">
+        <header class="row">
             <!-- élément 1 -->
-            <div>
+            <div class="col-12 col-md-9">
                 <img src="img/logo_msp_Part.png" width="365" height="73">
             </div>
             <!-- fin élément 1 -->
 
             <!-- élément 2 -->
-            <div role="search" id="recherche_conteneur">
-                <form action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
-                    <input type="text" name="fullText" id="rechercheInput" value="Rechercher" title="Rechercher"
-                        class="m-3">
-                    <input type="submit" value="ok" title="Lancer la recherche" id="ok_recherche">
+            <div class="col-12 col-md-3" role="search" id="recherche_conteneur">
+                <form class="mt-3"  action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
+                    <input class="col-9" type="text" name="fullText" id="rechercheInput" value="Rechercher" title="Rechercher" >
+                    <input class="col-2" type="submit" value="ok" title="Lancer la recherche" id="ok_recherche">
                 </form>
             </div>
             <!-- fin élément 2 -->
         </header>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div >
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Mon tableau de bord</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">&gt; Mes liaisons de comptes</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Mon calendrier</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Mon suivi</a></li>
-                            </ul>
-                            <span class="flecheActive"></span>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Mes documents</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">&gt; Mon porte-documents</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Mon bloc-notes</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Mon profil</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">&gt; Mes coordonnées</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Mes contacts</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Mes options</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Catalogue des services</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">&gt; Les démarches</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Les formulaires CERFA</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Les organismes partenaires</a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">&gt; L'annuaire de
-                                        l'administration</a></li>
-                                <li><a class="dropdown-item" href="#">&gt; Le guide des droits et démarches</a></li>
-                            </ul>
-                        </li>
+        <nav>
+            <ul class="row navbar px-4">
+                <li class="dropdown col-12 col-md-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Mon tableau de bord</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">&gt; Mes liaisons de comptes</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Mon calendrier</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Mon suivi</a></li>
                     </ul>
-                </div>
-            </div>
+                    <span class="flecheActive"></span>
+                </li>
+                <li class="dropdown col-12 col-md-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Mes documents</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">&gt; Mon porte-documents</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Mon bloc-notes</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown col-12 col-md-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Mon profil</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">&gt; Mes coordonnées</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Mes contacts</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Mes options</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown col-12 col-md-3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Catalogue des services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">&gt; Les démarches</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Les formulaires CERFA</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Les organismes partenaires</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">&gt; L'annuaire de
+                                l'administration</a></li>
+                        <li><a class="dropdown-item" href="#">&gt; Le guide des droits et démarches</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
 
         <ul class="lienAccueil d-flex">
@@ -92,12 +82,12 @@
 
         <section class="row mb-3">
             <!-- élément 1 -->
-            <main class="e1 col-lg-8">
+            <main class="e1 col-md-8">
                 <h1 class="px-5">Mon tableau de bord</h1>
                 <div class="texte_e1 mb-3">Découvrez ci-dessous ce que vous pouvez faire dans la rubrique « Mon tableau
                     de bord ».</div>
                 <div class="menuDemarches row m-0 px-2 pt-2">
-                    <div class="col">
+                    <div class="col-md-4">
                         <a href="jsp/mes_liaisons.jsp">
                             <img src="img/402_429_Liaisons.JPG" width="60" height="60"> Mes liaisons de comptes
                         </a>
@@ -107,7 +97,7 @@
                             <li>Gérez vos liaisons de comptes.</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <a href="jsp/mon_calendrier.jsp">
                             <img src="img/605_403_418_picto_agenda.gif" width="60" height="60"> Mon calendrier
                         </a>
@@ -116,7 +106,7 @@
                             <li>Recevez des alertes par courriel pour vos rappels d'échéances.</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <a href="jsp/mon_suivi.jsp">
                             <img src="img/401_430_suivi.jpg" width="60" height="60"> Mon suivi
                         </a>
@@ -130,7 +120,7 @@
             </main>
 
             <!-- élément 2 et élément 3 en colonne -->
-            <aside class="col-lg-4">
+            <aside class="col-md-4">
                 <!-- élément 2 -->
                 <section class="e2">
                     <h2 class="texte_e2 px-4 pt-1">LES ASTUCES</h2>
@@ -140,7 +130,8 @@
                                 Accédez depuis mon.service-public.fr à une nouvelle génération de démarches en ligne</a>
                         </li>
                     </ul>
-                    <div class="astuces d-flex justify-content-end px-2"><a href="jsp/authent/toutes_astuces_msp.jsp">Toutes les astuces</a></div>
+                    <div class="astuces d-flex justify-content-end px-2"><a
+                            href="jsp/authent/toutes_astuces_msp.jsp">Toutes les astuces</a></div>
                 </section>
                 <!-- fin élément 2 -->
 
@@ -165,7 +156,8 @@
                                 <span class="date">15/06/2012</span> Accédez à votre déclaration de revenus depuis
                                 MSP</a></li>
                     </ul>
-                    <div class="actu d-flex justify-content-end px-2"><a href="jsp/authent/tout_actualites_msp.jsp">Toutes les actualités</a></div>
+                    <div class="actu d-flex justify-content-end px-2"><a
+                            href="jsp/authent/tout_actualites_msp.jsp">Toutes les actualités</a></div>
                 </section>
                 <!-- fin élément 3 -->
             </aside>
@@ -173,12 +165,12 @@
 
 
         <footer class="mb-3">
-            <ul class="footer d-flex p-4">
-                <li>
+            <ul class="footer row p-4">
+                <li class="col-12 col-md-1">
                     <span><a href="http://www.ojd-internet.com/chiffres-internet/7111-service-public.fr"
                             target="_blank"><img src="img/logo-ojd.png" alt="logo du OJD"></a></span>
                 </li>
-                <li class="ms-3">
+                <li class="ccol-12 col-md-2">
                     <p>Assistance et contact</p>
                     <ul>
                         <li><a href="jsp/authent/plan_du_site.jsp" target="_self"><span title="">Plan du
@@ -189,7 +181,7 @@
                                     fréquentes</span></a></li>
                     </ul>
                 </li>
-                <li class="ms-3">
+                <li class="col-12 col-md-2">
                     <p>Informations légales</p>
                     <ul>
                         <li><a href="jsp/authent/mentions_legales.jsp"><span title="">Mentions légales</span></a>
@@ -202,7 +194,7 @@
                                     informations publiques</span></a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="col-12 col-md-2">
                     <p>Qualité de service</p>
                     <ul>
                         <li><a href="jsp/authent/accessibilite.jsp"><span title="">Accessibilité</span></a></li>
@@ -212,7 +204,7 @@
                         <li><a href="jsp/authent/statistiques.jsp"><span title="">Statistiques</span></a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="col-12 col-md-2">
                     <p>Partenariat</p>
                     <ul>
                         <li><a href="jsp/authent/partenaires.jsp"><span title="">Nos organismes
@@ -222,7 +214,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="footerEnd d-flex justify-content-center">
+            <div class="footerEnd text-center">
                 <a target="_blank" href="jsp/authent/a_propos_de_la_DGME.jsp">Tous droits réservés - Direction Générale
                     de Modernisation de l'Etat -
                     2012 </a> <span class="spanFooter mx-3"> | </span>
@@ -234,11 +226,11 @@
 
     <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,9 +1,10 @@
 /*header*/
 
 header {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f1f6f8;
+    /* margin-top: 10px;
+    padding-bottom: 10px; */
+    background-image: url(img/bg-contenu2.png);
+    background-repeat: repeat-x;
 }
 
 
@@ -14,21 +15,21 @@ header {
 nav {
     background-image: url(img/bkg_menu_demarches.jpg);
     background-repeat: repeat-x;
-}
-
-/* Désactive la flèche du menu déroulant Bootstrap */
-.navbar-nav .nav-link.dropdown-toggle::after {
-    display: none;
-}
-
-/* Désactive également la flèche du menu déroulant Bootstrap dans la barre de navigation mobile */
-.navbar-toggler-icon {
-    display: none;
-}
-
-.navbar-nav li a {
     font-size: larger;
+    color: #008bd3;
 }
+
+a.dropdown-item{
+    color: #008bd3;
+}
+a#navbarDropdownMenuLink.nav-link.dropdown-toggle::after {
+    content: none;
+}
+
+
+
+
+ 
 /* fin navbar*/
 
 .lienAccueil {
