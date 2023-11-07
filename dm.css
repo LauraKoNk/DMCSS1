@@ -1,0 +1,188 @@
+/*header*/
+
+header {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f1f6f8;
+}
+
+
+/*fin header*/
+
+/*navbar*/
+
+nav {
+    background-image: url(img/bkg_menu_demarches.jpg);
+    background-repeat: repeat-x;
+}
+
+/* Désactive la flèche du menu déroulant Bootstrap */
+.navbar-nav .nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* Désactive également la flèche du menu déroulant Bootstrap dans la barre de navigation mobile */
+.navbar-toggler-icon {
+    display: none;
+}
+
+.navbar-nav li a {
+    font-size: larger;
+}
+/* fin navbar*/
+
+.lienAccueil {
+    padding: 0px;
+}
+
+.lienAccueil li a {
+    color:#105c94;
+    font-weight: bold;
+}
+
+.lienAccueil li {
+    color:#105c94;
+}
+
+/*contenu central*/
+
+main > h1 {
+    color: white;
+    background-color: #105c94;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main > .texte_e1 {
+    color: #105c94;
+    font-weight: 500;
+}
+
+.menuDemarches {
+    background-color: #f1f6f8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px lightgrey;
+}
+
+
+.menuDemarches .col a {
+    color:#105c94;
+    font-weight:500;
+}
+
+.menuDemarches .col-sm-4 {
+    margin-bottom: 20px;
+}
+
+.menuDemarches ul {
+    margin-top: 10px;
+}
+
+   
+
+.texte_e2 , .texte_e3 {
+    font-size: 15px;
+    color: white;
+}
+
+.texte_e2{
+    background-color: #105c94;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+.texte_e3{
+    background-color: #9c2f03;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.e2 , .e3{
+    background-color: #f1f6f8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px lightgrey;
+}
+
+.e2 ul li a{
+    color: black;
+}
+
+.e3 ul li a{
+    color: black;
+}
+
+.e3 ul span{
+    color:#9c2f03;
+    font-weight: 500;
+}
+
+.astuces a{
+    color: #105c94;
+}
+
+.actu a{
+    color: #9c2f03;
+}
+
+/*fin contenu central*/
+
+
+/*footer*/
+
+.footer {
+    background-color: #008bd3;
+    color: white;
+    margin: 0px;
+    font-weight: 500;
+    font-size: small;
+}
+
+.footer li a {
+    color: white;
+    font-weight: 500;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li::before {
+    content: "\2022"; 
+    color:deepskyblue; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+  
+.footerEnd a{ 
+    color: white;
+    font-weight: 500;
+}
+
+.footerEnd{
+    background-color: #00327b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: small;
+}
+
+.spanFooter{
+    color:black;
+}
+
+/* Liens de toute la page*/
+
+ul li:not(.footer ul li) {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fin liens de toute la page*/
